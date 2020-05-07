@@ -4,10 +4,9 @@ import (
 	"fmt"
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/go-xorm/xorm"
+	_ "github.com/lib/pq"
 	"github.com/stretchr/testify/assert"
 	"testing"
-
-	_ "github.com/lib/pq"
 )
 
 func TestCreateMessage(t *testing.T) {
